@@ -1,4 +1,4 @@
-FROM darthjee/node:0.0.7
+FROM python:2.7.15
 
-WORKDIR /home/app/app/
+# WORKDIR /home/app/app/
 

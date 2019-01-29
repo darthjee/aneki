@@ -2,6 +2,6 @@ version: 2
 jobs:
   build:
     docker:
-      - image: darthjee/circleci_node:0.0.7
+      - image: darthjee/circleci_python:0.2.2
     steps:
       - checkout
