@@ -1,0 +1,7 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: darthjee/circleci_node:0.0.7
+    steps:
+      - checkout

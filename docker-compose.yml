@@ -1,0 +1,14 @@
+version: '2'
+services:
+  #################### Base  ####################
+
+  base: &base
+    build: .
+    volumes:
+      - .:/home/app/app
+
+  #################### CONTAINERS ####################
+  aneki_app:
+    <<: *base
+    container_name: aneki_app
+    command: /bin/bash
