@@ -1,5 +1,6 @@
-FROM python:2.7.15
+FROM darthjee/python_27:0.2.2
 
 WORKDIR /home/app/app/
+ADD --chown=app:app Pipfile* /home/app/app/
 
-RUN pip install pipenv
+RUN pipenv install
