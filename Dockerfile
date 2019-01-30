@@ -1,4 +1,5 @@
 FROM python:2.7.15
 
-# WORKDIR /home/app/app/
+WORKDIR /home/app/app/
 
+RUN pip install pipenv
