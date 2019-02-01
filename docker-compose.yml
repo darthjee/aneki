@@ -14,3 +14,8 @@ services:
     command: pipenv run python ./manage.py runserver 0.0.0.0:8000
     ports:
       - 127.0.0.1:8000:8000
+
+  aneki_dev:
+    <<: *base
+    container_name: aneki_dev
+    command: pipenv run /bin/bash
