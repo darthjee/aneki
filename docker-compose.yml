@@ -11,4 +11,6 @@ services:
   aneki_app:
     <<: *base
     container_name: aneki_app
-    command: /bin/bash
+    command: pipenv run python ./manage.py runserver 0.0.0.0:8000
+    ports:
+      - 127.0.0.1:8000:8000
